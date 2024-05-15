@@ -4,51 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agomoh Chukwuemeka Emmanuel - Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
     }
 
     nav ul {
       list-style-type: none;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      background-color: #333;
+      margin: 0;
     }
 
     nav ul li {
+      display: inline;
       margin: 0 15px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      padding: 14px 20px;
-      display: block;
+      font-size: 1.2rem;
     }
 
     nav ul li a:hover {
-      background-color: #111;
+      text-decoration: underline;
     }
 
     header {
       text-align: center;
-      padding: 50px 0;
-      background-color: #f4f4f4;
+      padding: 50px 20px;
+      background-image: url('https://source.unsplash.com/1600x900/?technology,code');
+      background-size: cover;
+      color: white;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
     header p {
-      margin: 10px 0 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .badge-container {
+      margin-top: 20px;
+    }
+
+    .badge-container img {
+      width: 40px;
+      margin: 0 10px;
     }
 
     section {
@@ -57,25 +75,31 @@
 
     h2 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 30px;
     }
 
-    .carousel-inner {
+    .project, .achievements {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .carousel-inner, .achievements .carousel {
       display: flex;
       overflow: hidden;
-      position: relative;
     }
 
     .carousel-item {
-      display: none;
       flex: 1 0 100%;
+      display: none;
       text-align: center;
     }
 
     .carousel-item img {
       width: 100%;
+      max-height: 400px;
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .carousel-item.active {
@@ -86,12 +110,6 @@
       position: relative;
       max-width: 800px;
       margin: 0 auto;
-      overflow: hidden;
-    }
-
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease;
     }
 
     .achievements .carousel-item {
@@ -124,25 +142,23 @@
     }
 
     button {
-      background-color: #333;
+      background-color: #007bff;
       color: white;
       border: none;
-      padding: 10px;
+      padding: 10px 20px;
       cursor: pointer;
       margin: 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #555;
-    }
-
-    .project {
-      text-align: center;
-      margin-bottom: 50px;
+      background-color: #0056b3;
     }
 
     .project h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 10px;
     }
 
@@ -160,9 +176,94 @@
       text-decoration: underline;
     }
 
+    #contact {
+      background-color: #333;
+      color: white;
+    }
+
     #contact p {
       text-align: center;
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .github-icon {
+      margin-left: 10px;
+    }
+    /* Add this CSS to your existing style section */
+    .carousel-inner, .achievements .carousel {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        flex: 1 0 100%;
+        display: none;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        max-height: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-item.active {
+        display: block;
+    }
+
+    .carousel-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .achievements .carousel-item {
+        min-width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .achievements .carousel-item img {
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .achievements .carousel-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .tick {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #4CAF50;
+        background: white;
+        border-radius: 50%;
+        padding: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+   
   </style>
 </head>
 <body>
@@ -180,6 +281,14 @@
   <header>
     <h1>Agomoh Chukwuemeka Emmanuel</h1>
     <p>Project Manager with backend development and machine learning skills</p>
+    <div class="badge-container">
+      <a href="https://github.com/Agomzyemeka" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+      </a>
+      <a href="https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+      </a>
+    </div>
   </header>
 
   <!-- Projects Section -->
@@ -232,64 +341,75 @@
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <div class="achievements" id="achievements">
+<!-- Achievements Section -->
+<section id="achievements">
     <h2>Achievements</h2>
     <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item active">
-          <img src="assets/certificate1.jpg" alt="Certificate 1">
-          <div class="tick">&#10003;</div>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="https://github.com/Agomzyemeka/personal-website/blob/c472d92ab0be50ea928dda2da8803bc2313804bd/assets/certificate2.jpg/800x400.png?text=Certificate+1" alt="Certificate 1">
+                <div class="tick">&#10004;</div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://github.com/Agomzyemeka/personal-website/blob/c472d92ab0be50ea928dda2da8803bc2313804bd/assets/certificate1.jpg/800x400.png?text=Certificate+2" alt="Certificate 2">
+                <div class="tick">&#10004;</div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://github.com/Agomzyemeka/personal-website/blob/c472d92ab0be50ea928dda2da8803bc2313804bd/assets/certificate3.png/800x400.png?text=Certificate+3" alt="Certificate 3">
+                <div class="tick">&#10004;</div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://github.com/Agomzyemeka/personal-website/blob/c472d92ab0be50ea928dda2da8803bc2313804bd/assets/certificate4.jpg/800x400.png?text=Certificate+3" alt="Certificate 3">
+                <div class="tick">&#10004;</div>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/certificate2.jpg" alt="Certificate 2">
-          <div class="tick">&#10003;</div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/certificate3.jpg" alt="Certificate 3">
-          <div class="tick">&#10003;</div>
-        </div>
-        <!-- Add more items as needed -->
-      </div>
     </div>
-  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+<!-- Contact Section -->
+<section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-  </section>
+    <p>Feel free to reach out via email at emyagomoh54321@gmail.com .</p>
+</section>
 
-<!-- JavaScript for Project Image and Video Display -->
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Agomoh Chukwuemeka Emmanuel</p>
+    <div class="social-icons">
+        <a href="https://github.com/Agomzyemeka" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
 <script>
     let slideIndex = [0, 0, 0];
-  
+
     function showSlides(n, no) {
         let i;
         let x = document.querySelectorAll(`#project${no + 1} .carousel-inner .carousel-item`);
-        if (n >= x.length) {slideIndex[no] = 0}
-        if (n < 0) {slideIndex[no] = x.length - 1}
+        if (n >= x.length) { slideIndex[no] = 0 }
+        if (n < 0) { slideIndex[no] = x.length - 1 }
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         x[slideIndex[no]].style.display = "block";
     }
-  
+
     function nextSlide(no) {
         showSlides(slideIndex[no] += 1, no);
     }
-  
+
     function prevSlide(no) {
         showSlides(slideIndex[no] -= 1, no);
     }
-  
-    document.addEventListener("DOMContentLoaded", function() {
+
+    document.addEventListener("DOMContentLoaded", function () {
         showSlides(0, 0);
         showSlides(0, 1);
         showSlides(0, 2);
     });
-  
-    window.addEventListener("scroll", function() {
+
+    window.addEventListener("scroll", function () {
         let elements = document.querySelectorAll(".slide-in");
         for (let i = 0; i < elements.length; i++) {
             let position = elements[i].getBoundingClientRect();
@@ -298,23 +418,21 @@
             }
         }
     });
-  </script>
-  
-  <!-- JavaScript for Achievements Carousel -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const carousel = document.querySelector('.achievements .carousel');
-      let currentIndex = 0;
-  
-      function showNextItem() {
-          currentIndex = (currentIndex + 1) % carousel.children.length;
-          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }
-  
-      setInterval(showNextItem, 3000); // Change slide every 3 seconds
+
+    // Achievements carousel
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('#achievements .carousel');
+        let currentIndex = 0;
+
+        function showNextItem() {
+            currentIndex = (currentIndex + 1) % carousel.children.length;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextItem, 3000); // Change slide every 3 seconds
     });
-  </script>
-  </body>
-  </html>
-  
-   
+</script>
+
+</body>
+</html>
+
