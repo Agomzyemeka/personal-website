@@ -1,6 +1,6 @@
 # Agomoh Chukwuemeka Emmanuel
 
-![Profile Picture]([https://avatars.githubusercontent.com/u/yourusername?v=4](https://github.com/account)) <!-- Replace with your GitHub profile picture URL -->
+![Profile Picture](https://avatars.githubusercontent.com/u/113604626?v=4) <!-- Replace with your GitHub profile picture URL -->
 
 ## 🌟 About Me
 
