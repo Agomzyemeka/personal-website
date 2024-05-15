@@ -4,9 +4,12 @@
 
 <p align="center">
   <a href="https://github.com/Agomzyemeka">
-    <img src="assets/profile.jpg" alt="Profile Picture" width="150" style="border-radius: 50%; border: 2px solid #333;">
+    <div style="position: relative; display: inline-block;">
+      <img src="assets/profile.jpg" alt="Profile Picture" width="150" style="border-radius: 50%; border: 2px solid #333;">
+      <img src="https://img.icons8.com/color/48/000000/verified-badge.png" alt="Verified" style="position: absolute; bottom: 0; right: 0; width: 30px; height: 30px;">
+    </div>
   </a>
-</p> <!-- Replace with your GitHub profile picture URL -->
+</p>> <!-- Replace with your GitHub profile picture URL -->
 
 ## 🌟 About Me
 
