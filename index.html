@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agomoh Chukwuemeka Emmanuel - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -130,10 +129,35 @@
       border: none;
       padding: 10px;
       cursor: pointer;
+      margin: 10px;
     }
 
     button:hover {
       background-color: #555;
+    }
+
+    .project {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
     }
 
     #contact p {
@@ -163,6 +187,8 @@
     <h2>Projects</h2>
     <div id="project1" class="project">
       <h3>Project 1</h3>
+      <p>A brief description of the first project, highlighting the technologies used and the outcomes achieved.</p>
+      <a href="https://github.com/Agomzyemeka/project1" target="_blank">View on GitHub</a>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/project1_image1.jpg" alt="Project 1 Image 1">
@@ -176,6 +202,8 @@
     </div>
     <div id="project2" class="project">
       <h3>Project 2</h3>
+      <p>A brief description of the second project, highlighting the technologies used and the outcomes achieved.</p>
+      <a href="https://github.com/Agomzyemeka/project2" target="_blank">View on GitHub</a>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/project2_image1.jpg" alt="Project 2 Image 1">
@@ -189,6 +217,8 @@
     </div>
     <div id="project3" class="project">
       <h3>Project 3</h3>
+      <p>A brief description of the third project, highlighting the technologies used and the outcomes achieved.</p>
+      <a href="https://github.com/Agomzyemeka/project3" target="_blank">View on GitHub</a>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/project3_image1.jpg" alt="Project 3 Image 1">
@@ -230,10 +260,10 @@
     <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
   </section>
 
-  <!-- JavaScript for Project Image and Video Display -->
-  <script>
+<!-- JavaScript for Project Image and Video Display -->
+<script>
     let slideIndex = [0, 0, 0];
-
+  
     function showSlides(n, no) {
         let i;
         let x = document.querySelectorAll(`#project${no + 1} .carousel-inner .carousel-item`);
@@ -244,22 +274,21 @@
         }
         x[slideIndex[no]].style.display = "block";
     }
-
+  
     function nextSlide(no) {
         showSlides(slideIndex[no] += 1, no);
     }
-
+  
     function prevSlide(no) {
         showSlides(slideIndex[no] -= 1, no);
     }
-
-
+  
     document.addEventListener("DOMContentLoaded", function() {
         showSlides(0, 0);
         showSlides(0, 1);
         showSlides(0, 2);
     });
-
+  
     window.addEventListener("scroll", function() {
         let elements = document.querySelectorAll(".slide-in");
         for (let i = 0; i < elements.length; i++) {
@@ -270,21 +299,22 @@
         }
     });
   </script>
-
+  
   <!-- JavaScript for Achievements Carousel -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const carousel = document.querySelector('.achievements .carousel');
       let currentIndex = 0;
-
+  
       function showNextItem() {
           currentIndex = (currentIndex + 1) % carousel.children.length;
           carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
-
+  
       setInterval(showNextItem, 3000); // Change slide every 3 seconds
     });
   </script>
-
-</body>
-</html>
+  </body>
+  </html>
+  
+   
