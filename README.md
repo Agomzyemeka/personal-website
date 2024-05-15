@@ -1,76 +1,68 @@
-# Agomoh Chukwuemeka Emmanuel
+# Personal Website of Agomoh Chukwuemeka Emmanuel
 
-![GitHub Verified](https://img.shields.io/badge/verified-github-brightgreen?style=flat-square&logo=github)
+Welcome to my personal website! This site showcases my projects and skills as a Project Manager with backend development and machine learning expertise. The site features a responsive design, engaging hover effects, and dynamic slide-in animations to create a visually appealing and user-friendly experience.
 
-<p align="center">
-  <a href="https://github.com/Agomzyemeka">
-    <div style="position: relative; display: inline-block;">
-      <img src="assets/profile.jpg" alt="Profile Picture" width="150" style="border-radius: 50%; border: 2px solid #333;">
-      <img src="https://img.icons8.com/color/48/000000/verified-badge.png" alt="Verified" style="position: relative; bottom: 0; right: 0; width: 30px; height: 30px;">
-    </div>
-  </a>
-</p><!-- Replace with your GitHub profile picture URL -->
+## Features
 
-## 🌟 About Me
+- **Responsive Design**: Optimized for viewing on any device, ensuring a seamless experience on desktops, tablets, and mobile phones.
+- **Carousel Gallery**: Each project includes a carousel of images and videos, showcasing the work in an engaging and interactive manner.
+- **Smooth Animations**: Slide-in effects and hover animations enhance the user experience, providing a modern and professional look.
+- **GitHub Integration**: Direct links to GitHub repositories for each project, allowing visitors to view the source code and explore more details.
+- **Font Awesome Icons**: Utilized for social media links and other icons, adding a touch of modern design.
 
-Hello! I'm **Agomoh Chukwuemeka Emmanuel**, a Project Manager with a strong background in backend development and machine learning. I specialize in managing complex projects and bringing innovative solutions to life through code and intelligent systems.
+## Technologies Used
+
+- **HTML5**: The structure of the website.
+- **CSS3**: Styling, including responsive design and animations.
+- **JavaScript**: Interactivity, such as the carousel functionality and animations.
+- **Font Awesome**: Iconography for social media and other elements.
+
+## Projects
+
+- **Project Title 1**: A brief description of the first project, highlighting the technologies used and the outcomes achieved.
+- **Project Title 2**: A brief description of the second project, highlighting the technologies used and the outcomes achieved.
+- **Project Title 3**: A brief description of the third project, highlighting the technologies used and the outcomes achieved.
+
+## Contact
+
+Feel free to reach out via email at [emyagomoh54321@gmail.com](mailto:emyagomoh54321@gmail.com).
+
+## How to View
+
+You can view the live website at [https://yourusername.github.io/personal-website/](https://yourusername.github.io/personal-website/).
+
+## Contributing
+
+If you have suggestions or improvements, please feel free to submit an issue or a pull request. Contributions are welcome!
 
 ---
 
-## 💼 Skills
+<p align="center">
+  <a href="https://github.com/Agomzyemeka" style="position: relative; display: inline-block; text-decoration: none;">
+    <img src="assets/profile.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%; border: 2px solid #333; object-fit: cover;">
+    <img src="https://img.icons8.com/color/48/000000/verified-badge.png" alt="Verified" width="30" height="30" style="position: absolute; bottom: 0; right: 0;">
+  </a>
+</p>
 
-- **Project Management**
-- **Backend Development**
+## Skills
+- Project Management
+- Backend Development
   - Node.js
   - Python (Django, Flask)
   - Java
-- **Machine Learning**
+- Machine Learning
   - Python (scikit-learn, TensorFlow, Keras)
   - Data Analysis (Pandas, NumPy)
-- **Web Development**
+- Web Development
   - HTML5, CSS3, JavaScript
   - Responsive Design
-- **Database Management**
+- Database Management
   - MySQL, PostgreSQL
   - MongoDB
-- **Version Control**
+- Version Control
   - Git, GitHub
 
----
+## Social Links
 
-## 📈 Projects
-
-### Project 1: Innovative Project Title 1
-![Project Image](assets/image1.jpg)
-- **Description**: Brief description of the project, highlighting technologies used and outcomes achieved.
-- **GitHub Repository**: [View Code](https://github.com/yourusername/project1)
-
-### Project 2: Innovative Project Title 2
-![Project Image](assets/image2.jpg)
-- **Description**: Brief description of the project, highlighting technologies used and outcomes achieved.
-- **GitHub Repository**: [View Code](https://github.com/yourusername/project2)
-
-### Project 3: Innovative Project Title 3
-![Project Image](assets/image3.jpg)
-- **Description**: Brief description of the project, highlighting technologies used and outcomes achieved.
-- **GitHub Repository**: [View Code](https://github.com/yourusername/project3)
-
----
-
-## 📫 Contact Me
-
-Feel free to reach out to me via email at [emyagomoh54321@gmail.com](mailto:emyagomoh54321@gmail.com).
-
----
-
-## 🌐 Connect with Me
-
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Agomzyemeka)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/)
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/Agomzyemeka)
