@@ -215,8 +215,6 @@
   </div>
 </div>
 
-<!-- Include this before the closing </body> tag -->
-<script src="assets/carousel.js"></script>
 
 <style>
   .achievements {
@@ -303,19 +301,7 @@
             }
         });
     </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.carousel');
-  let currentIndex = 0;
-  
-  function showNextItem() {
-    currentIndex = (currentIndex + 1) % carousel.children.length;
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-  
-  setInterval(showNextItem, 3000); // Change slide every 3 seconds
-});
-    </script>    
-
+    <!-- Include this before the closing </body> tag -->
+    <script src="assets/carousel.js"></script>  
 </body>
 </html>
