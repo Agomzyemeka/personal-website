@@ -113,6 +113,8 @@
             width: 100%;
             transition: opacity 1s;
             display: none;
+            max-height: 200px; /* Ensuring the images and videos fit within the placeholder */
+            object-fit: cover; /* Ensuring the images and videos cover the placeholder */
         }
 
         .project-carousel-item.active {
@@ -300,7 +302,7 @@
             images[currentImageIndex].classList.add('active');
         }
 
-        setInterval(changeImage, 2000);
+        setInterval(changeImage, 3000); // Adjusted interval for better visibility
 
         // Carousel Logic for Projects
         const carousels = document.querySelectorAll('.project-carousel');
