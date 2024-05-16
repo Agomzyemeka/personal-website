@@ -11,34 +11,31 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Arial', sans-serif;
             color: #fff;
             background-color: #121212;
-            overflow-x: hidden;
         }
-
+        
         /* Header Styling */
         header {
             background: linear-gradient(to right, #181943, #2c1887, #2f12ae);
             padding: 20px;
             text-align: center;
-            position: relative;
         }
-
+        
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-
+        
         header h2 {
             font-size: 1.2em;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
-
+        
+        /* Icon Links */
         .social-icons a {
             margin: 0 10px;
             display: inline-block;
@@ -46,24 +43,23 @@
             font-size: 1.5em;
             transition: transform 0.3s;
         }
-
+        
         .social-icons a:hover {
             transform: scale(1.2);
         }
-
+        
         /* Section Styling */
         section {
             padding: 50px 20px;
             text-align: center;
         }
-
+        
         section h2 {
             font-size: 2em;
             margin-bottom: 20px;
             position: relative;
-            animation: fadeIn 2s;
         }
-
+        
         section h2::after {
             content: '';
             width: 60px;
@@ -74,7 +70,7 @@
             left: 50%;
             transform: translateX(-50%);
         }
-
+        
         /* Project Styling */
         .project {
             display: inline-block;
@@ -84,28 +80,23 @@
             background-color: #1f1f1f;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s;
         }
-
+        
         .project img {
             width: 100%;
             border-radius: 10px;
         }
-
+        
         .project h3 {
             margin: 15px 0;
             font-size: 1.5em;
         }
-
+        
         .project p {
             font-size: 1em;
             line-height: 1.6;
         }
-
-        .project:hover {
-            transform: translateY(-10px);
-        }
-
+        
         /* Button Styling */
         .btn {
             display: inline-block;
@@ -118,22 +109,22 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-
+        
         .btn:hover {
-            background-color: #007e86;
+            background-color: #1823c3;
         }
-
+        
         /* Footer Styling */
         footer {
             background: linear-gradient(to right, #181943, #2c1887, #2f12ae);
             text-align: center;
             padding: 20px;
         }
-
+        
         footer p {
             font-size: 1em;
         }
-
+        
         /* Achievement Carousel */
         .carousel {
             position: relative;
@@ -143,41 +134,21 @@
             overflow: hidden;
             border-radius: 10px;
         }
-
+        
         .carousel img {
             width: 100%;
             transition: opacity 1s;
         }
-
+        
         .carousel img:not(:first-child) {
             position: absolute;
             top: 0;
             left: 0;
             opacity: 0;
         }
-
+        
         .carousel img.active {
             opacity: 1;
-        }
-
-        /* Keyframes for Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateX(100%); }
-            to { transform: translateX(0); }
-        }
-
-        @keyframes fadeInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        
-        .project {
-            animation: fadeInLeft 1s ease-in-out;
         }
     </style>
 </head>
@@ -195,13 +166,13 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <img src="https://via.placeholder.com/300" alt="Project 1 Image">
+            <img src="assets/project1_img1.png" alt="Project 1 Image">
             <h3>Project 1 Title</h3>
             <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             <a href="https://github.com/project1" class="btn">View on GitHub</a>
         </div>
         <div class="project">
-            <img src="https://via.placeholder.com/300" alt="Project 2 Image">
+            <img src="assets/project2_img1.png" alt="Project 2 Image">
             <h3>Project 2 Title</h3>
             <p>Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             <a href="https://github.com/project2" class="btn">View on GitHub</a>
@@ -211,9 +182,9 @@
     <section id="achievements">
         <h2>Achievements</h2>
         <div class="carousel">
-            <img src="https://via.placeholder.com/600x400" alt="Certificate 1" class="active">
-            <img src="https://via.placeholder.com/600x400" alt="Certificate 2">
-            <img src="https://via.placeholder.com/600x400" alt="Certificate 3">
+            <img src="assets/certificate1.jpg" alt="Certificate 1" class="active">
+            <img src="assets/certificate2.jpg" alt="Certificate 2">
+            <img src="assets/certificate3.jpg" alt="Certificate 3">
         </div>
     </section>
 
