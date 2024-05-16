@@ -78,7 +78,8 @@
         /* Project Styling */
         .project {
             display: inline-block;
-            width: 300px;
+            width: 100%;
+            max-width: 400px; /* Increased width for larger screens */
             margin: 20px;
             padding: 20px;
             background-color: #1f1f1f;
@@ -107,7 +108,7 @@
             width: 100%;
             overflow: hidden;
             border-radius: 10px;
-            height: 200px; /* Fixed height for the carousel */
+            height: 250px; /* Fixed height for the carousel */
         }
 
         .project-carousel-item {
@@ -137,14 +138,16 @@
             background-color: #2a9d8f; /* Updated color */
             border: none;
             color: #fff;
-            padding: 10px;
+            padding: 10px 15px;
             cursor: pointer;
             margin: 0 5px;
-            transition: background-color 0.3s;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .carousel-controls button:hover {
             background-color: #007e86;
+            transform: scale(1.1);
         }
 
         /* Button Styling */
@@ -220,6 +223,15 @@
         .project {
             animation: fadeInLeft 1s ease-in-out;
         }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+                max-width: none;
+                margin: 10px 0;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -253,8 +265,8 @@
                 </div>
             </div>
             <div class="carousel-controls">
-                <button onclick="prevItem(0)">Previous</button>
-                <button onclick="nextItem(0)">Next</button>
+                <button onclick="prevItem(0)">&lt;</button>
+                <button onclick="nextItem(0)">&gt;</button>
             </div>
             <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             <a href="https://github.com/agomzyemeka/project1" class="btn">View on GitHub</a>
@@ -270,13 +282,13 @@
                 </div>
                 <div class="project-carousel-item">
                     <video width="100%" controls>
-                        <source src="assets/x.mp4" type="video/mp4">
+                        <source src="assets/project2_video.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="carousel-controls">
-                <button onclick="prevItem(1)">Previous</button>
-                <button onclick="nextItem(1)">Next</button>
+                <button onclick="prevItem(1)">&lt;</button>
+                <button onclick="nextItem(1)">&gt;</button>
             </div>
             <p>Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
             <a href="https://github.com/agomzyemeka/project2" class="btn">View on GitHub</a>
