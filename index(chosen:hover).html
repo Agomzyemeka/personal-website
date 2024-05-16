@@ -21,7 +21,7 @@
 
         /* Header Styling */
         header {
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to right, #181943, #2c1887, #2f12ae);
             padding: 20px;
             text-align: center;
             position: relative;
@@ -68,7 +68,7 @@
             content: '';
             width: 60px;
             height: 3px;
-            background-color: #2a9d8f; /* Updated color */
+            background-color: #1823c3;
             position: absolute;
             bottom: -10px;
             left: 50%;
@@ -87,6 +87,11 @@
             transition: transform 0.3s;
         }
 
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
         .project h3 {
             margin: 15px 0;
             font-size: 1.5em;
@@ -101,43 +106,6 @@
             transform: translateY(-10px);
         }
 
-        .project-carousel {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .project-carousel-item {
-            width: 100%;
-            transition: opacity 1s;
-            display: none;
-        }
-
-        .project-carousel-item.active {
-            display: block;
-        }
-
-        .carousel-controls {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .carousel-controls button {
-            background-color: #2a9d8f; /* Updated color */
-            border: none;
-            color: #fff;
-            padding: 10px;
-            cursor: pointer;
-            margin: 0 5px;
-            transition: background-color 0.3s;
-        }
-
-        .carousel-controls button:hover {
-            background-color: #007e86;
-        }
-
         /* Button Styling */
         .btn {
             display: inline-block;
@@ -145,7 +113,7 @@
             margin-top: 20px;
             font-size: 1em;
             color: #fff;
-            background-color: #2a9d8f; /* Updated color */
+            background-color: #1823c3;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -157,7 +125,7 @@
 
         /* Footer Styling */
         footer {
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to right, #181943, #2c1887, #2f12ae);
             text-align: center;
             padding: 20px;
         }
@@ -218,79 +186,44 @@
         <h1>Agomoh Chukwuemeka Emmanuel</h1>
         <h2>Project Manager | Machine Learning | Python Developer | Automation</h2>
         <div class="social-icons">
-            <a href="mailto:example@example.com"><i class="fa fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/agomoh-chukwuemeka-emmanuel"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/agomzyemeka"><i class="fa fa-github"></i></a>
-            <a href="https://wa.me/2348034976462"><i class="fa fa-whatsapp"></i></a>
+            <a href="mailto:emyagomoh54321@gmail.com.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/yourprofile"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/yourprofile"><i class="fa fa-github"></i></a>
         </div>
     </header>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
+            <img src="assets/project1_img1.png" alt="Project 1 Image">
             <h3>Project 1 Title</h3>
-            <div class="project-carousel">
-                <div class="project-carousel-item active">
-                    <img src="assets/project1_img1.png" alt="Project 1 Image 1">
-                </div>
-                <div class="project-carousel-item">
-                    <img src="assets/project1_img2.png" alt="Project 1 Image 2">
-                </div>
-                <div class="project-carousel-item">
-                    <video width="100%" controls>
-                        <source src="assets/project1_video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button onclick="prevItem(0)">Previous</button>
-                <button onclick="nextItem(0)">Next</button>
-            </div>
             <p>Description of project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-            <a href="https://github.com/agomzyemeka/project1" class="btn">View on GitHub</a>
+            <a href="https://github.com/project1" class="btn">View on GitHub</a>
         </div>
         <div class="project">
+            <img src="assets/project1_img2.png" alt="Project 2 Image">
             <h3>Project 2 Title</h3>
-            <div class="project-carousel">
-                <div class="project-carousel-item active">
-                    <img src="assets/project2_img1.jpg" alt="Project 2 Image 1">
-                </div>
-                <div class="project-carousel-item">
-                    <img src="assets/project2_img2.jpg" alt="Project 2 Image 2">
-                </div>
-                <div class="project-carousel-item">
-                    <video width="100%" controls>
-                        <source src="assets/x.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button onclick="prevItem(1)">Previous</button>
-                <button onclick="nextItem(1)">Next</button>
-            </div>
             <p>Description of project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-            <a href="https://github.com/agomzyemeka/project2" class="btn">View on GitHub</a>
+            <a href="https://github.com/project2" class="btn">View on GitHub</a>
         </div>
     </section>
 
     <section id="achievements">
         <h2>Achievements</h2>
         <div class="carousel">
-            <img src="assets/certificate1.jpg" alt="Certificate 1" class="active">
+            <img src="assets/certificate1.jpg" alt="Certificate 1">
             <img src="assets/certificate2.jpg" alt="Certificate 2">
             <img src="assets/certificate3.png" alt="Certificate 3">
-            <img src="assets/certificate4.jpg" alt="Certificate 4">
+
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Agomoh Chukwuemeka Emmanuel. All rights reserved.</p>
+        <p>&copy; 2024 Agomoh Chukwuemeka Emmanuel. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Image Carousel Logic for Achievements
+        // Carousel Logic
         const images = document.querySelectorAll('.carousel img');
         let currentImageIndex = 0;
 
@@ -301,25 +234,6 @@
         }
 
         setInterval(changeImage, 2000);
-
-        // Carousel Logic for Projects
-        const carousels = document.querySelectorAll('.project-carousel');
-
-        function prevItem(projectIndex) {
-            const items = carousels[projectIndex].querySelectorAll('.project-carousel-item');
-            const currentIndex = Array.from(items).findIndex(item => item.classList.contains('active'));
-            items[currentIndex].classList.remove('active');
-            const prevIndex = (currentIndex - 1 + items.length) % items.length;
-            items[prevIndex].classList.add('active');
-        }
-
-        function nextItem(projectIndex) {
-            const items = carousels[projectIndex].querySelectorAll('.project-carousel-item');
-            const currentIndex = Array.from(items).findIndex(item => item.classList.contains('active'));
-            items[currentIndex].classList.remove('active');
-            const nextIndex = (currentIndex + 1) % items.length;
-            items[nextIndex].classList.add('active');
-        }
     </script>
 </body>
 </html>
