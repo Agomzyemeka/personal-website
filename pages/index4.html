@@ -15,42 +15,24 @@
             color: #ffffff;
         }
         header {
-            position: relative;
+            background: #0d0d0d;
             color: white;
+            padding: 1em 0;
             text-align: center;
-            padding: 2em 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
+            position: relative;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
             letter-spacing: 2px;
-            position: relative;
-            z-index: 1;
         }
         header p {
             margin: 0.5em 0;
             font-size: 1.2em;
             color: #cccccc;
-            position: relative;
-            z-index: 1;
         }
         .social-icons {
             margin-top: 1em;
-            position: relative;
-            z-index: 1;
         }
         .social-icons a {
             color: white;
@@ -138,25 +120,8 @@
         footer {
             background: #0d0d0d;
             color: white;
-            padding: 2em 0;
+            padding: 1em 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 200%;
-            height: 100%;
-            background: linear-gradient(120deg, #009688, #00796b, #0d0d0d);
-            z-index: -1;
-            animation: slideBackground 15s infinite linear;
-        }
-        @keyframes slideBackground {
-            0% { left: 50%; }
-            100% { left: -150%; }
         }
         footer .social-icons a {
             color: white;
@@ -188,14 +153,14 @@
     </style>
 </head>
 <body>
-    <header id="dynamic-header">
+    <header>
         <h1>Agomoh Chukwuemeka Emmanuel</h1>
         <p>Project Manager | Machine Learning | Python Developer | Automation</p>
         <div class="social-icons">
             <a href="https://github.com/Agomzyemeka" target="_blank"><i class="fab fa-github"></i></a>
             <a href="mailto:emyagomoh54321@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/+2347064767708" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </header>
 
@@ -209,10 +174,10 @@
                 <div class="carousel-container">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/project1_img1.jpg" alt="Project 1 Image 1">
+                            <img src="assets/project1_img1.png" alt="Project 1 Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/project1_img2.jpg" alt="Project 1 Image 2">
+                            <img src="assets/project1_img2.png" alt="Project 1 Image 2">
                         </div>
                         <div class="carousel-item">
                             <video controls>
@@ -248,10 +213,10 @@
             </div>
         </div>
 
-        <section id="achievements">
+        <section id="achievements" class="slide-in">
             <h2>Achievements</h2>
             <div class="carousel-container">
-                <div class="carousel-inner">
+                <div class="carousel">
                     <div class="carousel-item active">
                         <img src="assets/certificate1.jpg" alt="Certificate 1">
                         <div class="tick">&#10004;</div>
@@ -261,7 +226,11 @@
                         <div class="tick">&#10004;</div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/certificate3.jpg" alt="Certificate 3">
+                        <img src="assets/certificate3.png" alt="Certificate 3">
+                        <div class="tick">&#10004;</div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/certificate4.jpg" alt="Certificate 4">
                         <div class="tick">&#10004;</div>
                     </div>
                 </div>
@@ -275,19 +244,13 @@
                 <a href="https://github.com/Agomzyemeka" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:emyagomoh54321@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/+2347064767708" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Agomoh Chukwuemeka Emmanuel. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://github.com/Agomzyemeka" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:emyagomoh54321@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
     </footer>
 
     <script>
@@ -329,16 +292,6 @@
                 }
             });
         });
-
-        // Dynamic header background images from Unsplash
-        const changeHeaderImage = () => {
-            const header = document.getElementById('dynamic-header');
-            setInterval(() => {
-                header.style.backgroundImage = `url(https://source.unsplash.com/1600x900/?code,technology,software)`;
-            }, 5000); // Change background every 5 seconds
-        };
-
-        changeHeaderImage();
     </script>
 </body>
 </html>
