@@ -107,14 +107,20 @@
             width: 100%;
             overflow: hidden;
             border-radius: 10px;
+            height: 200px; /* Fixed height for the carousel */
         }
 
         .project-carousel-item {
             width: 100%;
             transition: opacity 1s;
             display: none;
-            max-height: 200px; /* Ensuring the images and videos fit within the placeholder */
-            object-fit: cover; /* Ensuring the images and videos cover the placeholder */
+            height: 100%; /* Full height */
+        }
+
+        .project-carousel-item img, .project-carousel-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensure the whole image/video is visible */
         }
 
         .project-carousel-item.active {
