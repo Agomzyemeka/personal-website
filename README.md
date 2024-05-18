@@ -29,7 +29,7 @@ Feel free to reach out via email at [emyagomoh54321@gmail.com](mailto:emyagomoh5
 
 ## How to View
 
-You can view the live website at [https://yourusername.github.io/personal-website/](https://yourusername.github.io/personal-website/).
+You can view the live website at [https://yourusername.github.io/personal-website/](https://Agomzyemeka.github.io/personal-website/).
 
 ## Contributing
 
